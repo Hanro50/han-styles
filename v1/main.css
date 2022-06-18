@@ -62,14 +62,6 @@ br {
     margin-top: 15px;
 }
 
-
-:root {
-    --text: #000;
-    --background: #eee;
-    --border: #000;
-    --accent: #fff;
-}
-
 :root {
     --text: #fff;
     --background: rgb(20, 20, 20);
