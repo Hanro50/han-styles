@@ -24,9 +24,6 @@ console.log(req.params.styles)
     res.type("css").send(result).end();
 })
 
-
-
-
 app.listen(settings.port)
 
 console.log(`Listening on port ${settings.port}`)
