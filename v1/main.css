@@ -1,0 +1,59 @@
+:root {
+    --text: #000;
+    --background: #eee;
+    --border: #000;
+    --accent: #fff;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--text);
+    height: calc(100% - 16px);
+    max-width: 99%;
+    width: 700px;
+    min-width: 350px;
+}
+
+.element {
+    text-align: center;
+    background-color: var(--accent);
+    border-radius: 15px;
+    width: 100%;
+    padding: 7px;
+}
+
+.button {
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    background-color: var(--background);
+}
+
+br {
+    height: 10px;
+}
+
+*:focus {
+    outline: none;
+}
+
+#license {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column-reverse;
+
+    margin-top: 15px;
+}
