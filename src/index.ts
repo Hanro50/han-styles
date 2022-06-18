@@ -19,7 +19,7 @@ console.log(req.params.styles)
             return res.status(403).end();
         const dir = join(req.params.version, value + ".css");
         if (!existsSync(dir)) continue;
-        result += `//${req.params.version}/${value}.css\n${(await readFile(dir)).toString()}\n`
+        result += `/*${req.params.version}/${value}.css*/\n${(await readFile(dir)).toString()}\n`
     }
     res.type("css").send(result).end();
 })
