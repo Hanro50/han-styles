@@ -1,8 +1,11 @@
-:root {
-    --text: #000;
-    --background: #eee;
-    --border: #000;
-    --accent: #fff;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 html {
@@ -12,6 +15,7 @@ html {
 }
 
 body {
+    animation: fadeIn ease 1s;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -56,4 +60,19 @@ br {
     flex-direction: column-reverse;
 
     margin-top: 15px;
+}
+
+
+:root {
+    --text: #000;
+    --background: #eee;
+    --border: #000;
+    --accent: #fff;
+}
+
+:root {
+    --text: #fff;
+    --background: rgb(20, 20, 20);
+    --border: rgb(30, 30, 30);
+    --accent: rgb(40, 40, 40);
 }
