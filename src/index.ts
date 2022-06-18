@@ -12,7 +12,7 @@ app.get("/:version/:styles", async (req, res) => {
     if (!settings.versions.includes(req.params.version))
         return res.status(404).end();
     let result = ""
-console.log(req.params.styles)
+    console.log(req.params.styles)
     for await (const value of req.params.styles.split(",")) {
 
         if (!value || value.includes(".."))
@@ -23,7 +23,7 @@ console.log(req.params.styles)
     }
     res.type("css").send(result).end();
 })
-
+app.use(Express.static("public"))
 app.listen(settings.port)
 
 console.log(`Listening on port ${settings.port}`)
