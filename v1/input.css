@@ -1,0 +1,12 @@
+input,select{
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: inherit;
+}
+select option {
+    margin: 40px;
+    background: var(--accent);
+    color: var(--text);
+    text-shadow: 0 1px 0 var(--accent);
+}

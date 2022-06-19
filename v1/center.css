@@ -1,6 +1,11 @@
-
 .centre,
 .centre_all,
 .centre_all * {
     text-align: center;
+}
+
+.left,
+.left_all,
+.left_all * {
+    text-align: left;
 }

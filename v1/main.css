@@ -68,3 +68,14 @@ br {
     --border: rgb(30, 30, 30);
     --accent: rgb(40, 40, 40);
 }
+
+.centre,
+.centre_all,
+.centre_all * {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
